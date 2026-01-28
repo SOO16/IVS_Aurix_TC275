@@ -1,0 +1,2015 @@
+!SESSION 2026-01-28 10:17:12.757 -----------------------------------------------
+eclipse.buildId=1.10.28
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -perspective com.infineon.aurix.buildmanager.perspective.c
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -perspective com.infineon.aurix.buildmanager.perspective.c
+
+!ENTRY org.eclipse.ui 2 0 2026-01-28 10:22:43.685
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-01-28 10:22:43.685
+!MESSAGE Commands should really have a category: plug-in='com.infineon.aurix.buildsystem.debug', id='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand', categoryId='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand'
+
+!ENTRY org.eclipse.ui 2 0 2026-01-28 10:22:43.968
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-01-28 10:22:43.968
+!MESSAGE Commands should really have a category: plug-in='com.infineon.aurix.buildsystem.debug', id='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand', categoryId='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand'
+
+!ENTRY com.infineon.aurix.buildsystem.quicklinks 4 0 2026-01-28 10:22:47.049
+!MESSAGE C:\Users\User\ADSDocuments\1.10.28\links.json (지정된 경로를 찾을 수 없습니다)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\User\ADSDocuments\1.10.28\links.json (지정된 경로를 찾을 수 없습니다)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:197)
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:185)
+	at com.google.common.io.ByteSink.write(ByteSink.java:104)
+	at com.google.common.io.Files.write(Files.java:272)
+	at com.infineon.aurix.buildsystem.quicklinks.connector.CachedURLLinksContainerConnector.getLinksContainerJsonInputStream(CachedURLLinksContainerConnector.java:36)
+	at com.infineon.aurix.buildsystem.quicklinks.LinksManager.lambda$1(LinksManager.java:80)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:361)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:528)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at com.infineon.aurix.buildsystem.quicklinks.LinksManager.parseConfig(LinksManager.java:94)
+	at com.infineon.aurix.buildsystem.quicklinks.LinksManager.getLinksForCategories(LinksManager.java:190)
+	at com.infineon.aurix.buildsystem.quicklinks.view.QuickLinksView.build(QuickLinksView.java:89)
+	at com.infineon.aurix.buildsystem.quicklinks.view.QuickLinksView.createPartControl(QuickLinksView.java:76)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:976)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:938)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:138)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:385)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:311)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:110)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:206)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:131)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:73)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:168)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:187)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:119)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:48)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:79)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:84)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:206)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:131)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:73)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:168)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:187)
+	at org.eclipse.ui.internal.WorkbenchPage.busySetPerspective(WorkbenchPage.java:4032)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$12(WorkbenchPage.java:3969)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.setPerspective(WorkbenchPage.java:3969)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:896)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:976)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:138)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:94)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:84)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1490)
+	at org.eclipse.ui.internal.StandardTrim.createStatusLine(StandardTrim.java:106)
+	at org.eclipse.ui.internal.StandardTrim.createWidget(StandardTrim.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:976)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:138)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:385)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:325)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:228)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:93)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:106)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:682)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1079)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY com.infineon.aurix.buildsystem 4 0 2026-01-28 10:22:47.670
+!MESSAGE ConnectException
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:573)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at com.infineon.aurix.buildsystem.IFXNetworkUtils$1.run(IFXNetworkUtils.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.sendHeadersAsync(Http1Exchange.java:239)
+	at java.net.http/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl0$9(Exchange.java:472)
+	at java.net.http/jdk.internal.net.http.Exchange.checkFor407(Exchange.java:404)
+	at java.net.http/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl0$10(Exchange.java:476)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:476)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:380)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:408)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:449)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:439)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:341)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:157)
+	at java.base/java.util.concurrent.CompletableFuture.completeAsync(CompletableFuture.java:2673)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsync(MultiExchange.java:294)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.sendAsync(HttpClientImpl.java:654)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:552)
+	... 3 more
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:149)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:157)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+	... 29 more
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 10:22:47.788
+!MESSAGE Cannot open remote device description from URL https://itools.infineon.com/aurix_ide/ADS/com.infineon.aurix.buildsystem/1.10.28/tc4-hardware.json. Resource does not exist
+
+!ENTRY com.infineon.aurix.buildsystem 4 0 2026-01-28 10:22:47.790
+!MESSAGE C:\Users\User\ADSDocuments\1.10.28\tc4-hardware.json (지정된 경로를 찾을 수 없습니다)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\User\ADSDocuments\1.10.28\tc4-hardware.json (지정된 경로를 찾을 수 없습니다)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:134)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:122)
+	at com.google.common.io.ByteSource.openBufferedStream(ByteSource.java:120)
+	at com.infineon.aurix.buildsystem.configuration.contributor.CachedURLHardwareContainerConnector.getHardwareContainerJsonInputStream(CachedURLHardwareContainerConnector.java:60)
+	at com.infineon.aurix.buildsystem.configuration.contributor.AbstractSupportedHardwareContributor.getSupportedHardwareContribution(AbstractSupportedHardwareContributor.java:29)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.lambda$40(SupportedHardwareManager.java:367)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.getSupportedHardwareContributions(SupportedHardwareManager.java:374)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.parseConfig(SupportedHardwareManager.java:76)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.getInstance(SupportedHardwareManager.java:65)
+	at com.infineon.aurix.buildsystem.AurixIDEStartup.earlyStartup(AurixIDEStartup.java:37)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2699)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 10:22:48.133
+!MESSAGE Cannot open remote device description from URL https://itools.infineon.com/aurix_ide/ADS/com.infineon.aurix.buildsystem/1.10.28/tc2-hardware.json. Resource does not exist
+
+!ENTRY com.infineon.aurix.buildsystem 4 0 2026-01-28 10:22:48.135
+!MESSAGE C:\Users\User\ADSDocuments\1.10.28\tc2-hardware.json (지정된 경로를 찾을 수 없습니다)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\User\ADSDocuments\1.10.28\tc2-hardware.json (지정된 경로를 찾을 수 없습니다)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:134)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:122)
+	at com.google.common.io.ByteSource.openBufferedStream(ByteSource.java:120)
+	at com.infineon.aurix.buildsystem.configuration.contributor.CachedURLHardwareContainerConnector.getHardwareContainerJsonInputStream(CachedURLHardwareContainerConnector.java:60)
+	at com.infineon.aurix.buildsystem.configuration.contributor.AbstractSupportedHardwareContributor.getSupportedHardwareContribution(AbstractSupportedHardwareContributor.java:29)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.lambda$40(SupportedHardwareManager.java:367)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.getSupportedHardwareContributions(SupportedHardwareManager.java:374)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.parseConfig(SupportedHardwareManager.java:76)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.getInstance(SupportedHardwareManager.java:65)
+	at com.infineon.aurix.buildsystem.AurixIDEStartup.earlyStartup(AurixIDEStartup.java:37)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2699)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 10:22:48.229
+!MESSAGE Cannot open remote device description from URL https://itools.infineon.com/aurix_ide/ADS/com.infineon.aurix.buildsystem/1.10.28/tc3-hardware.json. Resource does not exist
+
+!ENTRY com.infineon.aurix.buildsystem 4 0 2026-01-28 10:22:48.229
+!MESSAGE C:\Users\User\ADSDocuments\1.10.28\tc3-hardware.json (지정된 경로를 찾을 수 없습니다)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\User\ADSDocuments\1.10.28\tc3-hardware.json (지정된 경로를 찾을 수 없습니다)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:134)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:122)
+	at com.google.common.io.ByteSource.openBufferedStream(ByteSource.java:120)
+	at com.infineon.aurix.buildsystem.configuration.contributor.CachedURLHardwareContainerConnector.getHardwareContainerJsonInputStream(CachedURLHardwareContainerConnector.java:60)
+	at com.infineon.aurix.buildsystem.configuration.contributor.AbstractSupportedHardwareContributor.getSupportedHardwareContribution(AbstractSupportedHardwareContributor.java:29)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.lambda$40(SupportedHardwareManager.java:367)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.getSupportedHardwareContributions(SupportedHardwareManager.java:374)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.parseConfig(SupportedHardwareManager.java:76)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.getInstance(SupportedHardwareManager.java:65)
+	at com.infineon.aurix.buildsystem.AurixIDEStartup.earlyStartup(AurixIDEStartup.java:37)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2699)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem.remote-repo 4 0 2026-01-28 10:23:48.016
+!MESSAGE C:\Users\User\ADSDocuments\1.10.28\repo
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Users\User\ADSDocuments\1.10.28\repo
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:220)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:277)
+	at java.base/java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:323)
+	at java.base/java.nio.file.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at java.base/java.nio.file.Files.walk(Files.java:3918)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.list(LocallyCachedRemoteRepository.java:393)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.listLocal(LocallyCachedRemoteRepository.java:385)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.getLatestCachedVersion(LocallyCachedRemoteRepository.java:251)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.getArtifact(LocallyCachedRemoteRepository.java:166)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.getArtifact(LocallyCachedRemoteRepository.java:133)
+	at com.infineon.aurix.buildsystem.managed.wizard.NewProjectWizard$1.run(NewProjectWizard.java:111)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY com.infineon.aurix.buildsystem.remote-repo 1 0 2026-01-28 10:23:48.363
+!MESSAGE Using bundled version for artifact: project-initializer:tricore-tc2xx
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-28 10:24:20.768
+!MESSAGE Indexed 'LED_Blink' (164 sources, 642 headers) in 22.8 sec: 135,335 declarations; 206,715 references; 12 unresolved inclusions; 13,481 syntax errors; 2,681 unresolved names (0.78%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-28 10:28:57.634
+!MESSAGE Indexed 'Blinky_LED_1_KIT_TC275_SB' (165 sources, 634 headers) in 19.4 sec: 133,367 declarations; 202,709 references; 6 unresolved inclusions; 13,479 syntax errors; 2,343 unresolved names (0.69%)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 10:32:45.253
+!MESSAGE Boosting configuration Debug of project Blinky_LED_1_KIT_TC275_SB boosted in 1179 milliseconds. (full boost)
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:14.672
+!MESSAGE BuildMonitor: Listener registered for build events.
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:14.688
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:14.695
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:14.699
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:14.718
+!MESSAGE Trying to locate llvm-nm in bundle 38, res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:14.719
+!MESSAGE Trying to start llvm-nm from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:14.807
+!MESSAGE llvm-nm done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe, C:\Users\User\IVS_TC275\Blinky_LED_1_KIT_TC275_SB\Debug\Blinky_LED_1_KIT_TC275_SB.elf]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:14.808
+!MESSAGE Trying to locate lsmcdd in bundle 38, res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:14.808
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:16.341
+!MESSAGE lsmcdd done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:16.342
+!MESSAGE Trying to locate lsmcdd in bundle 38, res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:16.342
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:16.505
+!MESSAGE lsmcdd done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:16.506
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:16.506
+!MESSAGE absIpath: C:\Users\User\IVS_TC275\Blinky_LED_1_KIT_TC275_SB\Debug\Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:16.507
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:16.509
+!MESSAGE absIpath: C:\Users\User\IVS_TC275\Blinky_LED_1_KIT_TC275_SB\Debug\Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:16.509
+!MESSAGE Trying to locate llvm-nm in bundle 38, res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:16.509
+!MESSAGE Trying to start llvm-nm from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:16.545
+!MESSAGE llvm-nm done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe, C:\Users\User\IVS_TC275\Blinky_LED_1_KIT_TC275_SB\Debug\Blinky_LED_1_KIT_TC275_SB.elf]
+
+!ENTRY com.infineon.aurix.buildsystem.remote-repo 4 0 2026-01-28 10:35:16.563
+!MESSAGE C:\Users\User\ADSDocuments\1.10.28\repo
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Users\User\ADSDocuments\1.10.28\repo
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:220)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:277)
+	at java.base/java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:323)
+	at java.base/java.nio.file.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at java.base/java.nio.file.Files.walk(Files.java:3918)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.list(LocallyCachedRemoteRepository.java:393)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.listLocal(LocallyCachedRemoteRepository.java:385)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.getLatestCachedVersion(LocallyCachedRemoteRepository.java:251)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.getArtifact(LocallyCachedRemoteRepository.java:166)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.getArtifact(LocallyCachedRemoteRepository.java:133)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.getArtifact(LocallyCachedRemoteRepository.java:562)
+	at com.infineon.aurix.buildsystem.debug.tcf.SvdPathProvider.getSvdPath(SvdPathProvider.java:35)
+	at com.rt.hightec.tcf.agent.launch.debug.ui.HTHLaunchTab.getSVDPhatFromExtensionPoint(HTHLaunchTab.java:1122)
+	at com.rt.hightec.tcf.agent.launch.debug.ui.HTHLaunchTab.setDefaults(HTHLaunchTab.java:766)
+	at com.rt.hightec.tcf.agent.launch.debug.ui.SetDefaultsHandler.execute(SetDefaultsHandler.java:51)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at com.infineon.aurix.buildsystem.debug.DebugLaunchUtils.createDefaultTCFLaunchConfiguration(DebugLaunchUtils.java:165)
+	at com.infineon.aurix.buildsystem.debug.commandHandler.DebugActiveProjectCommandHandler.execute(DebugActiveProjectCommandHandler.java:63)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:444)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:442)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:464)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY com.infineon.aurix.buildsystem.remote-repo 1 0 2026-01-28 10:35:16.941
+!MESSAGE Using bundled version for artifact: svd:tc27xdpd
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.032
+!MESSAGE Successfully created new launch configuration for project 'Blinky_LED_1_KIT_TC275_SB'.
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.088
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.190
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.191
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.417
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.418
+!MESSAGE Trying to locate llvm-nm in bundle 38, res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.418
+!MESSAGE Trying to start llvm-nm from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.447
+!MESSAGE llvm-nm done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe, ]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.449
+!MESSAGE Trying to locate lsmcdd in bundle 38, res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.449
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.603
+!MESSAGE lsmcdd done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.650
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.651
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.651
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.653
+!MESSAGE absIpath: 
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.654
+!MESSAGE project: P/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.654
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.654
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.655
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.658
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.658
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.658
+!MESSAGE absIpath: 
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.659
+!MESSAGE project: P/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.659
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.659
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.660
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.660
+!MESSAGE Trying to locate llvm-nm in bundle 38, res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.661
+!MESSAGE Trying to start llvm-nm from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.693
+!MESSAGE llvm-nm done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe, ]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.694
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.695
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.695
+!MESSAGE absIpath: 
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.696
+!MESSAGE project: P/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.696
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.696
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.696
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.697
+!MESSAGE Trying to locate lsmcdd in bundle 38, res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.697
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.807
+!MESSAGE lsmcdd done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.807
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.808
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.808
+!MESSAGE absIpath: 
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.809
+!MESSAGE project: P/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.809
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.809
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.810
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.833
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.833
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.834
+!MESSAGE absIpath: 
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.834
+!MESSAGE project: P/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.834
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.834
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.835
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.835
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.837
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.837
+!MESSAGE absIpath: 
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.837
+!MESSAGE project: P/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.837
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.837
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.838
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.838
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.838
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.839
+!MESSAGE absIpath: 
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.839
+!MESSAGE project: P/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.839
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.839
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.840
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.841
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.841
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.841
+!MESSAGE absIpath: 
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.841
+!MESSAGE project: P/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.843
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.843
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.843
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.948
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.948
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.948
+!MESSAGE absIpath: 
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.949
+!MESSAGE project: P/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.949
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.949
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:17.949
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 10:35:50.983
+!MESSAGE Boosting configuration Debug of project Blinky_LED_1_KIT_TC275_SB boosted in 839 milliseconds. (full boost)
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:55.874
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:55.877
+!MESSAGE Trying to locate lsmcdd in bundle 38, res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:55.878
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:56.203
+!MESSAGE lsmcdd done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:56.238
+!MESSAGE Trying to locate aurix-flasher in bundle 38, res/aurixflasher/AURIXFlasher.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:56.239
+!MESSAGE Trying to start aurix-flasher from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/aurixflasher/AURIXFlasher.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:56.239
+!MESSAGE First attempt flash command: [C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/aurixflasher/AURIXFlasher.exe, -gui, off, -elf, C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, -start, off, -ver, on, -id, 0]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:57.040
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:57.041
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:58.306
+!MESSAGE Flasher out: AURIX Flasher Software Tool 3.0.14.0, built on 2025-11-26 오후 6:00:40
+::Connected to device... [TC2x] TC27x 
+::Loading  ELF file .......... (Pass)
+::Erasing Flash memory .......... (Pass)
+::Programming Flash memory ..........(Pass)
+::Verifying Flash memory ..........
+::Flash memory matches expected value (Pass)
+Overall time: 1300 ms
+AURIXFlasher Exit Status: Pass
+
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:58.307
+!MESSAGE Trying to locate debugger in bundle 38, res/aurix-debugger.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:58.308
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/aurix-debugger.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:58.309
+!MESSAGE Trying to locate llvm-nm in bundle 38, res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:58.310
+!MESSAGE Trying to start llvm-nm from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:58.353
+!MESSAGE llvm-nm done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe, C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:58.356
+!MESSAGE Agent start with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/aurix-debugger.exe, -s, TCP:127.0.0.1:1534, -p, DAS JTAG SHIELDBUDDY TC275 4641SCXR, -e, core0_main, -b, 0, -r, C:/Infineon/AURIX-Studio-1.10.28/build_system/bundled-artefacts-repo/svd/tc27xdpd/1.1-2/device.svd, -K, C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB, -f]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:58.576
+!MESSAGE SID: 6a1774fc-e1a9-44ce-a2e7-f2e7f9089e27 DP: 9196
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:35:58.598
+!MESSAGE Debugger has been started, continuing with the rest of the application
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.599
+!MESSAGE Writing launch config
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.635
+!MESSAGE Blinky_LED_1_KIT_TC275_SB Debug
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.692
+!MESSAGE Obtained project name Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.692
+!MESSAGE Obtained flashware file ${workspace_loc}/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.692
+!MESSAGE Symbol file found at C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.692
+!MESSAGE Getting node to configure symbols
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.693
+!MESSAGE Will load execution contexts and connected memory maps
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.705
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.706
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.706
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.706
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.707
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.707
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.707
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.707
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.707
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.709
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.709
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.709
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.709
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.709
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=8efc14a8-a8c6-4e0c-a82d-a88b00756a03}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.709
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.709
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=94cac5ab-220c-4d79-bdd4-8b9a44dba2e1}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.710
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.710
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=47bc0b0b-420a-4e56-a6c7-6222104db3c4}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.710
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.710
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E, Flags=0, UUID=343b3e39-d9d7-44d4-9029-c3a11c8a1590}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.711
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.711
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=4afa60ef-3d4c-49f5-b8c4-541f2016ddfe}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.711
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.711
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E, Flags=0, UUID=34e02a30-3138-4fc6-b68e-adea28096b95}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.711
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.711
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=b2e964f7-47db-41e5-8061-0cafc2a24ad3}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.711
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.713
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E, Flags=0, UUID=28808fd3-edf8-4094-809c-a9af80bcbb2e}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.713
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.713
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P, Flags=0, UUID=9a154747-90bc-4a85-a766-4ee8a0096407}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.713
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.713
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=048592dd-1a05-48fe-9aec-7b884727f753}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.713
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.714
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E, Flags=0, UUID=951dc9d4-10c4-49dc-9581-ce91fd2e7e13}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.714
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.714
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P, Flags=0, UUID=9c6fa1d2-30aa-444d-8bf1-d94488add896}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.727
+!MESSAGE Writing mapping to launch config: [{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"8efc14a8-a8c6-4e0c-a82d-a88b00756a03"},{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"94cac5ab-220c-4d79-bdd4-8b9a44dba2e1"},{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"47bc0b0b-420a-4e56-a6c7-6222104db3c4"},{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E","Flags":0,"UUID":"343b3e39-d9d7-44d4-9029-c3a11c8a1590"},{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"4afa60ef-3d4c-49f5-b8c4-541f2016ddfe"},{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E","Flags":0,"UUID":"34e02a30-3138-4fc6-b68e-adea28096b95"},{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"b2e964f7-47db-41e5-8061-0cafc2a24ad3"},{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E","Flags":0,"UUID":"28808fd3-edf8-4094-809c-a9af80bcbb2e"},{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P","Flags":0,"UUID":"9a154747-90bc-4a85-a766-4ee8a0096407"},{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"048592dd-1a05-48fe-9aec-7b884727f753"},{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E","Flags":0,"UUID":"951dc9d4-10c4-49dc-9581-ce91fd2e7e13"},{"FileName":"C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P","Flags":0,"UUID":"9c6fa1d2-30aa-444d-8bf1-d94488add896"}]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.798
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:02.798
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:21.703
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:36:21.703
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:37:42.355
+!MESSAGE Debugger process terminated.
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:38:24.162
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:38:24.163
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:14.636
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:50.360
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:50.362
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:51.628
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:51.628
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:54.598
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:54.598
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:55.599
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:55.599
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:57.001
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:57.002
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-28 10:40:58.828
+!MESSAGE Indexed 'Blinky_LED_1_KIT_TC275_SB' (72 sources, 501 headers) in 8.69 sec: 96,513 declarations; 67,670 references; 6 unresolved inclusions; 13,727 syntax errors; 1,681 unresolved names (1%)
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:58.930
+!MESSAGE Build started for project: Blinky_LED_1_KIT_TC275_SB
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:40:58.930
+!MESSAGE Build completed for project: Blinky_LED_1_KIT_TC275_SB. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:52:12.399
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:52:12.399
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:52:17.407
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 10:52:17.407
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:35:27.193
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:35:27.195
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:37:10.115
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:37:10.115
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:37:40.485
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:37:40.485
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:37:49.270
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:37:49.270
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:38:00.982
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:38:00.984
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:38:03.005
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:38:03.007
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:38:07.114
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:38:07.115
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:38:11.221
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:38:11.223
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:38:15.339
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:38:15.342
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:40:24.280
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:40:24.282
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:40:25.284
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:40:25.285
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:40:26.843
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:40:26.844
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:42:55.296
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:42:55.297
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:42:56.346
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:42:56.347
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:42:57.450
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:42:57.450
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:42:58.481
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:42:58.483
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:42:59.627
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:42:59.627
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:17.624
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:17.625
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:19.794
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:19.795
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:39.709
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:39.710
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:41.395
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:41.396
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:43.708
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:43.710
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:50.133
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:50.134
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:59.422
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:43:59.423
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:44:02.469
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:44:02.471
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:45:53.557
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:45:53.558
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:45:57.251
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:45:57.253
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:45:58.934
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:45:58.935
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:47:10.459
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:47:10.460
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:47:11.511
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:47:11.512
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:47:27.212
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:47:27.212
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:00.991
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:00.992
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:03.132
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:03.133
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:07.812
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:07.813
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:09.283
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:09.284
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:40.743
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:40.743
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:45.332
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:45.332
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:58.946
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:48:58.946
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:00.305
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:00.305
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:02.802
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:02.802
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:04.648
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:04.649
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:30.001
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:30.002
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:31.473
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:31.475
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:33.572
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:33.574
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:35.178
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:35.179
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:38.743
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:38.744
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:49:48.833
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:49:48.836
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:49:48.838
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project LED_Blink boosted in 0 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:49:48.896
+!MESSAGE Include paths were discovered in 54 milliseconds.
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:50:01.274
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:51:00.919
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project LED_Blink boosted in 801 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:51:00.963
+!MESSAGE Include paths were discovered in 41 milliseconds.
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:51:05.807
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:51:26.434
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:51:26.441
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:51:26.441
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project LED_Blink boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:51:26.473
+!MESSAGE Include paths were discovered in 28 milliseconds.
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:51:27.390
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:52:13.241
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:52:13.242
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:52:20.819
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:52:20.823
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:52:20.823
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project LED_Blink boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:52:20.856
+!MESSAGE Include paths were discovered in 30 milliseconds.
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:52:21.752
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:53:35.850
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:53:35.853
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:53:35.853
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project LED_Blink boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:53:35.884
+!MESSAGE Include paths were discovered in 29 milliseconds.
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:53:36.818
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:10.341
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:10.341
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:10.344
+!MESSAGE Trying to locate llvm-nm in bundle 38, res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:10.344
+!MESSAGE Trying to start llvm-nm from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:10.370
+!MESSAGE llvm-nm done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe, C:\Users\User\IVS_TC275\LED_Blink\TriCore Debug (TASKING)\LED_Blink.elf]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:10.370
+!MESSAGE Trying to locate lsmcdd in bundle 38, res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:10.370
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.206
+!MESSAGE lsmcdd done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.207
+!MESSAGE Trying to locate lsmcdd in bundle 38, res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.207
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.370
+!MESSAGE lsmcdd done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.372
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.372
+!MESSAGE absIpath: C:\Users\User\IVS_TC275\LED_Blink\TriCore Debug (TASKING)\LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.372
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.372
+!MESSAGE absIpath: C:\Users\User\IVS_TC275\LED_Blink\TriCore Debug (TASKING)\LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.373
+!MESSAGE Trying to locate llvm-nm in bundle 38, res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.373
+!MESSAGE Trying to start llvm-nm from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.397
+!MESSAGE llvm-nm done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe, C:\Users\User\IVS_TC275\LED_Blink\TriCore Debug (TASKING)\LED_Blink.elf]
+
+!ENTRY com.infineon.aurix.buildsystem.remote-repo 4 0 2026-01-28 11:54:11.402
+!MESSAGE C:\Users\User\ADSDocuments\1.10.28\repo
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Users\User\ADSDocuments\1.10.28\repo
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:220)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:277)
+	at java.base/java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:323)
+	at java.base/java.nio.file.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at java.base/java.nio.file.Files.walk(Files.java:3918)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.list(LocallyCachedRemoteRepository.java:393)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.listLocal(LocallyCachedRemoteRepository.java:385)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.getLatestCachedVersion(LocallyCachedRemoteRepository.java:251)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.getArtifact(LocallyCachedRemoteRepository.java:166)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.getArtifact(LocallyCachedRemoteRepository.java:133)
+	at com.infineon.aurix.buildsystem.remoterepo.LocallyCachedRemoteRepository.getArtifact(LocallyCachedRemoteRepository.java:562)
+	at com.infineon.aurix.buildsystem.debug.tcf.SvdPathProvider.getSvdPath(SvdPathProvider.java:35)
+	at com.rt.hightec.tcf.agent.launch.debug.ui.HTHLaunchTab.getSVDPhatFromExtensionPoint(HTHLaunchTab.java:1122)
+	at com.rt.hightec.tcf.agent.launch.debug.ui.HTHLaunchTab.setDefaults(HTHLaunchTab.java:766)
+	at com.rt.hightec.tcf.agent.launch.debug.ui.SetDefaultsHandler.execute(SetDefaultsHandler.java:51)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at jdk.internal.reflect.GeneratedMethodAccessor111.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at com.infineon.aurix.buildsystem.debug.DebugLaunchUtils.createDefaultTCFLaunchConfiguration(DebugLaunchUtils.java:165)
+	at com.infineon.aurix.buildsystem.debug.commandHandler.DebugActiveProjectCommandHandler.execute(DebugActiveProjectCommandHandler.java:63)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at jdk.internal.reflect.GeneratedMethodAccessor111.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:444)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:442)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:464)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY com.infineon.aurix.buildsystem.remote-repo 1 0 2026-01-28 11:54:11.837
+!MESSAGE Using bundled version for artifact: svd:tc27xdpd
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.861
+!MESSAGE Successfully created new launch configuration for project 'LED_Blink'.
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.907
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.962
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.963
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.988
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.989
+!MESSAGE Trying to locate llvm-nm in bundle 38, res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:11.989
+!MESSAGE Trying to start llvm-nm from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.012
+!MESSAGE llvm-nm done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe, C:\Users\User\IVS_TC275\LED_Blink\TriCore Debug (TASKING)\LED_Blink.elf]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.014
+!MESSAGE Trying to locate lsmcdd in bundle 38, res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.014
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.153
+!MESSAGE lsmcdd done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.163
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.163
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.164
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.164
+!MESSAGE absIpath: C:\Users\User\IVS_TC275\LED_Blink\TriCore Debug (TASKING)\LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.164
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.164
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.164
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.165
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.165
+!MESSAGE absIpath: ${workspace_loc}/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.165
+!MESSAGE project: P/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.165
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.165
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.166
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.166
+!MESSAGE Trying to locate llvm-nm in bundle 38, res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.166
+!MESSAGE Trying to start llvm-nm from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.189
+!MESSAGE llvm-nm done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe, C:\Users\User\IVS_TC275\LED_Blink\TriCore Debug (TASKING)\LED_Blink.elf]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.189
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.190
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.190
+!MESSAGE absIpath: C:\Users\User\IVS_TC275\LED_Blink\TriCore Debug (TASKING)\LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.190
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.191
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.193
+!MESSAGE Trying to locate lsmcdd in bundle 38, res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.193
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.339
+!MESSAGE lsmcdd done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.340
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.340
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.340
+!MESSAGE absIpath: ${workspace_loc}/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.341
+!MESSAGE project: P/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.341
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.341
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.341
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.342
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.343
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.343
+!MESSAGE absIpath: ${workspace_loc}/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.343
+!MESSAGE project: P/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.343
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.343
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.343
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.344
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.344
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.345
+!MESSAGE absIpath: ${workspace_loc}/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.345
+!MESSAGE project: P/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.345
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.345
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.345
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.345
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.347
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.347
+!MESSAGE absIpath: ${workspace_loc}/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.347
+!MESSAGE project: P/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.347
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.347
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.347
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.348
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.348
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.349
+!MESSAGE absIpath: ${workspace_loc}/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.349
+!MESSAGE project: P/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.349
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.349
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.349
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.433
+!MESSAGE ex reged: org.eclipse.core.internal.registry.ExtensionRegistry@601bbbb6
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.433
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.433
+!MESSAGE absIpath: ${workspace_loc}/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.434
+!MESSAGE project: P/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.434
+!MESSAGE projectpath: C:/Users/User/IVS_TC275/LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.434
+!MESSAGE wp_path: C:/Users/User/IVS_TC275
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:12.434
+!MESSAGE absIpath: C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:54:16.252
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project LED_Blink boosted in 138 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2026-01-28 11:54:16.286
+!MESSAGE Include paths were discovered in 31 milliseconds.
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:17.014
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:17.015
+!MESSAGE Trying to locate lsmcdd in bundle 38, res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:17.017
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:17.328
+!MESSAGE lsmcdd done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/lsmcdd.exe]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:17.340
+!MESSAGE Trying to locate aurix-flasher in bundle 38, res/aurixflasher/AURIXFlasher.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:17.341
+!MESSAGE Trying to start aurix-flasher from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/aurixflasher/AURIXFlasher.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:17.341
+!MESSAGE First attempt flash command: [C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/aurixflasher/AURIXFlasher.exe, -gui, off, -elf, C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, -start, off, -ver, on, -id, 0]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:18.119
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:18.120
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:18.719
+!MESSAGE Flasher out: AURIX Flasher Software Tool 3.0.14.0, built on 2025-11-26 오후 6:00:40
+::Connected to device... [TC2x] TC27x 
+::Loading  ELF file .......... (Pass)
+::Erasing Flash memory .......... (Pass)
+::Programming Flash memory ..........(Pass)
+::Verifying Flash memory ..........
+::Flash memory matches expected value (Pass)
+Overall time: 1126 ms
+AURIXFlasher Exit Status: Pass
+
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:18.719
+!MESSAGE Trying to locate debugger in bundle 38, res/aurix-debugger.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:18.719
+!MESSAGE Trying to start debugger from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/aurix-debugger.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:18.719
+!MESSAGE Trying to locate llvm-nm in bundle 38, res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:18.721
+!MESSAGE Trying to start llvm-nm from /C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:18.752
+!MESSAGE llvm-nm done with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/llvm-nm.exe, C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:18.753
+!MESSAGE Agent start with command: [/C:/Infineon/AURIX-Studio-1.10.28/plugins/com.rt.hightec.tcf.agent.launcher_1.0.53/res/aurix-debugger.exe, -s, TCP:127.0.0.1:1534, -p, DAS JTAG SHIELDBUDDY TC275 4641SCXR, -e, core0_main, -b, 0, -r, C:/Infineon/AURIX-Studio-1.10.28/build_system/bundled-artefacts-repo/svd/tc27xdpd/1.1-2/device.svd, -K, C:/Users/User/IVS_TC275/LED_Blink, -f]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:18.758
+!MESSAGE SID: 63bb528e-6d11-46f9-8080-55b93af740e3 DP: 13400
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:18.759
+!MESSAGE Debugger has been started, continuing with the rest of the application
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.760
+!MESSAGE Writing launch config
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.797
+!MESSAGE LED_Blink TriCore Debug (TASKING)
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.802
+!MESSAGE Obtained project name LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.803
+!MESSAGE Obtained flashware file ${workspace_loc}/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.803
+!MESSAGE Symbol file found at C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.803
+!MESSAGE Getting node to configure symbols
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.803
+!MESSAGE Will load execution contexts and connected memory maps
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.804
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.805
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.805
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.805
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.807
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.807
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.807
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.807
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.807
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.808
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.808
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.808
+!MESSAGE Found new debug context: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.808
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.808
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=017e2c50-53d1-4bfa-8d50-56bbb77b415b}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.808
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.809
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=c303f3e2-8ca3-4de9-8a58-9136c23cf6dd}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.809
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.809
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=89853f25-197b-4b43-b3f8-529f8014dafa}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.809
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.809
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E, Flags=0, UUID=9e534cc7-cdb2-4201-aeb7-15a010e264d1}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.809
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.810
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=3de56c34-15da-4dd4-8a1b-ed9e18e194fb}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.810
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.810
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E, Flags=0, UUID=b0b1cc8a-f195-436d-845e-74a787ec81ef}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.810
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.810
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=8600d20e-4b3e-4274-b3e0-43efcdf592c0}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.811
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.811
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E, Flags=0, UUID=392e82a1-14d5-4886-8abc-48b50a1fa432}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.811
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.811
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P, Flags=0, UUID=4415def8-be78-4752-9c99-54d0d6d805df}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.811
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.811
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P, Flags=0, UUID=db1008f6-9091-4faa-83eb-e70df0b4c2f2}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.812
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.812
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E, Flags=0, UUID=e35d0e1c-a153-4de6-a253-4ac03b6f29dc}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.812
+!MESSAGE Adding mapping for id: /DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.812
+!MESSAGE Mapping: {FileName=C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf, ID=/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P, Flags=0, UUID=3cf8a0ad-a700-445d-812e-96abed5e04f3}
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.813
+!MESSAGE Writing mapping to launch config: [{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"017e2c50-53d1-4bfa-8d50-56bbb77b415b"},{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"c303f3e2-8ca3-4de9-8a58-9136c23cf6dd"},{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"89853f25-197b-4b43-b3f8-529f8014dafa"},{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E","Flags":0,"UUID":"9e534cc7-cdb2-4201-aeb7-15a010e264d1"},{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"3de56c34-15da-4dd4-8a1b-ed9e18e194fb"},{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E","Flags":0,"UUID":"b0b1cc8a-f195-436d-845e-74a787ec81ef"},{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"8600d20e-4b3e-4274-b3e0-43efcdf592c0"},{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E","Flags":0,"UUID":"392e82a1-14d5-4886-8abc-48b50a1fa432"},{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P","Flags":0,"UUID":"4415def8-be78-4752-9c99-54d0d6d805df"},{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P","Flags":0,"UUID":"db1008f6-9091-4faa-83eb-e70df0b4c2f2"},{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E","Flags":0,"UUID":"e35d0e1c-a153-4de6-a253-4ac03b6f29dc"},{"FileName":"C:/Users/User/IVS_TC275/LED_Blink/TriCore Debug (TASKING)/LED_Blink.elf","ID":"/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P","Flags":0,"UUID":"3cf8a0ad-a700-445d-812e-96abed5e04f3"}]
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.948
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:22.949
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:24.084
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:54:24.084
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:55:14.776
+!MESSAGE Debugger process terminated.
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:59:55.872
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 11:59:55.872
+!MESSAGE Build completed for project: LED_Blink. Success status: true
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 12:05:07.043
+!MESSAGE Build started for project: LED_Blink
+
+!ENTRY com.rt.hightec.tcf.agent.launcher 4 4 2026-01-28 12:05:07.044
+!MESSAGE Build completed for project: LED_Blink. Success status: true

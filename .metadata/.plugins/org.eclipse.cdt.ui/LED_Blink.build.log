@@ -1,0 +1,18 @@
+11:54:16 **** Incremental Build of configuration TriCore Debug (TASKING) for project LED_Blink ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: LED_Blink.elf
+Invoking: TASKING Linker
+cctc -f .LED_Blink.elf.opt
+Finished building target: LED_Blink.elf
+ 
+Invoking: Print Size
+elfsize  "LED_Blink.elf"
+Total sizes:
+ROM: 0x22f9 (8953) = code: 0x214c (8524) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: LED_Blink.siz
+ 
+
+11:54:16 Build Finished. 0 errors, 0 warnings. (took 498ms)
+

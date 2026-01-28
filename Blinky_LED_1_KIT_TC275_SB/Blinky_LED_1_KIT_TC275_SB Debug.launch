@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.rt.hightec.agent.launcher.launchConfigurationType">
+    <stringAttribute key="ACC_HW" value="DAS JTAG SHIELDBUDDY TC275 4641SCXR"/>
+    <booleanAttribute key="ENABLE_AGENTLOG" value="false"/>
+    <booleanAttribute key="ENABLE_FLASHING" value="true"/>
+    <booleanAttribute key="ENABLE_STOPPING" value="true"/>
+    <stringAttribute key="EXECUTABLE_PATH" value="${workspace_loc}/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf"/>
+    <stringAttribute key="STOP_FUNCTION" value="core0_main"/>
+    <stringAttribute key="SVD" value="C:/Infineon/AURIX-Studio-1.10.28/build_system/bundled-artefacts-repo/svd/tc27xdpd/1.1-2/device.svd"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="Blinky_LED_1_KIT_TC275_SB"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/Blinky_LED_1_KIT_TC275_SB"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_LOCATION" value="/Blinky_LED_1_KIT_TC275_SB/Blinky_LED_1_KIT_TC275_SB Debug.launch"/>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_PROJECT_NAME" value="Blinky_LED_1_KIT_TC275_SB"/>
+    <booleanAttribute key="org.eclipse.debug.ui.ATTR_SHARED" value="true"/>
+    <stringAttribute key="org.eclipse.tcf.debug.MemoryMap" value="[{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;8efc14a8-a8c6-4e0c-a82d-a88b00756a03&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;94cac5ab-220c-4d79-bdd4-8b9a44dba2e1&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;47bc0b0b-420a-4e56-a6c7-6222104db3c4&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;343b3e39-d9d7-44d4-9029-c3a11c8a1590&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;4afa60ef-3d4c-49f5-b8c4-541f2016ddfe&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;34e02a30-3138-4fc6-b68e-adea28096b95&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;b2e964f7-47db-41e5-8061-0cafc2a24ad3&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;28808fd3-edf8-4094-809c-a9af80bcbb2e&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;9a154747-90bc-4a85-a766-4ee8a0096407&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;048592dd-1a05-48fe-9aec-7b884727f753&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;951dc9d4-10c4-49dc-9581-ce91fd2e7e13&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;9c6fa1d2-30aa-444d-8bf1-d94488add896&quot;}]"/>
+    <stringAttribute key="org.eclipse.tcf.debug.PeerID" value="TCP:127.0.0.1:1534"/>
+    <stringAttribute key="org.eclipse.tcf.debug.ProjectName" value="Blinky_LED_1_KIT_TC275_SB"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalAgent" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalServer" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.UseLocalAgent" value="false"/>
+    <stringAttribute key="org.eclipse.tcf.debug.executable_name" value="${workspace_loc}/Blinky_LED_1_KIT_TC275_SB/Debug/Blinky_LED_1_KIT_TC275_SB.elf"/>
+    <stringAttribute key="sessionID" value="6a1774fc-e1a9-44ce-a2e7-f2e7f9089e27"/>
+</launchConfiguration>
