@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.rt.hightec.agent.launcher.launchConfigurationType">
+    <stringAttribute key="ACC_HW" value="DAS JTAG SHIELDBUDDY TC275 4641SCXR"/>
+    <booleanAttribute key="ENABLE_AGENTLOG" value="false"/>
+    <booleanAttribute key="ENABLE_FLASHING" value="true"/>
+    <booleanAttribute key="ENABLE_STOPPING" value="true"/>
+    <stringAttribute key="EXECUTABLE_PATH" value="${workspace_loc}/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf"/>
+    <stringAttribute key="STOP_FUNCTION" value="core0_main"/>
+    <stringAttribute key="SVD" value="C:/Infineon/AURIX-Studio-1.10.28/build_system/bundled-artefacts-repo/svd/tc27xdpd/1.1-2/device.svd"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="EX_Interrupt"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/EX_Interrupt"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_LOCATION" value="/EX_Interrupt/EX_Interrupt TriCore Debug (TASKING).launch"/>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_PROJECT_NAME" value="EX_Interrupt"/>
+    <booleanAttribute key="org.eclipse.debug.ui.ATTR_SHARED" value="true"/>
+    <stringAttribute key="org.eclipse.tcf.debug.MemoryMap" value="[{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;7c7d9f36-cfc6-4e34-a432-133efc4a1c34&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;f59044bf-b83b-4548-bec9-c67a421a6084&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;6c2c1035-2b07-4c1d-97f6-6fec03911f78&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;fbb24176-c22b-42e6-b30a-af0a1fd4b14a&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;e0130101-db82-45e0-8147-03edce2ff465&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;a844811e-319b-498d-b5bb-47e9698a6e73&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;4b8427bb-a1ff-4a2c-8959-eaa0410f03c1&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;9cce831e-35ed-4977-9ec4-b54eed0f9a70&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;ad9d75ea-db95-4d19-8fb1-279c57f3a672&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;44bd38fe-f004-4619-b58c-ec205c811600&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;7b36e4cb-b98e-4d3d-baec-0a572243abb5&quot;},{&quot;FileName&quot;:&quot;C:/Users/User/IVS_TC275/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf&quot;,&quot;ID&quot;:&quot;/DAS JTAG SHIELDBUDDY TC275 4641SCXR/Core 1: CPU1 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;478ad3c2-6b65-4026-b44e-057555827048&quot;}]"/>
+    <stringAttribute key="org.eclipse.tcf.debug.PeerID" value="TCP:127.0.0.1:1534"/>
+    <stringAttribute key="org.eclipse.tcf.debug.ProjectName" value="EX_Interrupt"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalAgent" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalServer" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.UseLocalAgent" value="false"/>
+    <stringAttribute key="org.eclipse.tcf.debug.executable_name" value="${workspace_loc}/EX_Interrupt/TriCore Debug (TASKING)/EX_Interrupt.elf"/>
+    <stringAttribute key="sessionID" value="7a5f0190-3e03-4790-92e4-a7f8a4b7f11c"/>
+</launchConfiguration>
