@@ -1,0 +1,18 @@
+16:43:29 **** Incremental Build of configuration TriCore Debug (TASKING) for project Ex_Pjt_Total ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: Ex_Pjt_Total.elf
+Invoking: TASKING Linker
+cctc -f .Ex_Pjt_Total.elf.opt
+Finished building target: Ex_Pjt_Total.elf
+ 
+Invoking: Print Size
+elfsize  "Ex_Pjt_Total.elf"
+Total sizes:
+ROM: 0x361c (13852) = code: 0x33c6 (13254) + romdata: 0x256 (598)
+RAM: 0x95a4 (38308) = data + bss
+Finished building: Ex_Pjt_Total.siz
+ 
+
+16:43:30 Build Finished. 0 errors, 0 warnings. (took 793ms)
+

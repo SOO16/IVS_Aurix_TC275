@@ -1,23 +1,4 @@
-24   INFO  [main] Log5J : ***  31.118  ***  **********************************************************
-25   INFO  [main] Log5J : ***  31.6915  ***  Logger configuration successful. Configuration file used: 
-25   INFO  [main] Log5J : ***  31.7416  ***  C:\Infineon\AURIX-Studio-1.10.28\configuration\org.eclipse.osgi\398\0\.cp\lib\log4j.properties
-25   INFO  [main] Log5J : ***  31.7701  ***  **********************************************************
-47   INFO  [main] ISysProductFactory : ***  54.4826  ***  Found product: Name: 'com.infineon.aurix.buildsystem.aurixide', winIDEA package: 'winIDEA_IFX_ADS'
-50   INFO  [main] CmdRunner : Running: 'C:\Users\User\AppData\Local\iSYSTEM\b18\PackageManager.exe init --afr-path="C:\Infineon\AURIX-Studio-1.10.28\local_AFR" --owner="C:\Infineon\AURIX-Studio-1.10.28\AURIX-studio.exe"'
-98   INFO  [main] CmdRunner : Operation finished in 47ms Return code: 0
-98   INFO  [main] CmdRunner : Output: >>><<<
-98   INFO  [main] CmdRunner : Running: 'C:\Users\User\AppData\Local\iSYSTEM\b18\PackageManager.exe --version'
-132  INFO  [main] CmdRunner : Operation finished in 34ms Return code: 0
-132  INFO  [main] CmdRunner : Output: >>>9.21.345<<<
-133  INFO  [main] WinIdeaUpdateManager : Package manager version 9.21.345
-133  INFO  [main] WinIdeaUpdateManager : WinIdeaUpdateManager: initialization:
-133  INFO  [main] WinIdeaUpdateManager :  - Product folder: C:\Infineon\AURIX-Studio-1.10.28
-133  INFO  [main] WinIdeaUpdateManager :  - Product exe (owner): C:\Infineon\AURIX-Studio-1.10.28\AURIX-studio.exe
-133  INFO  [main] WinIdeaUpdateManager :  - Package manager: C:\Users\User\AppData\Local\iSYSTEM\b18\PackageManager.exe
-133  INFO  [main] WinIdeaUpdateManager :  - Local AFR: C:\Infineon\AURIX-Studio-1.10.28\local_AFR
-133  INFO  [main] WinIdeaUpdateManager :  - Update channel: Production
-142  INFO  [main] ISystemPreferences : ***  148.3827  ***  Preferences loaded: Install type: Custom, Custom path: '\winIDEA'
-143  INFO  [main] ISysDebugPlugin : ***  149.8213  ***  Starting Plugin si.isystem.eclipse.debug version 921.35900.228890.
-144  INFO  [main] ISysDebugPlugin : ***  151.2144  ***  Plugin si.isystem.eclipse.debug started.
-8814 INFO  [Framework stop - Equinox Container: 634f504e-b423-4ece-8a31-80619c2e4c8f] ISysDebugPlugin : ***  8820.5859  ***  Stopping Plugin si.isystem.eclipse.debug
-8833 INFO  [Framework stop - Equinox Container: 634f504e-b423-4ece-8a31-80619c2e4c8f] ISysDebugPlugin : ***  8839.9108  ***  Plugin si.isystem.eclipse.debug stopped.
+27   INFO  [main] Log5J : ***  33.647  ***  **********************************************************
+27   INFO  [main] Log5J : ***  34.3134  ***  Logger configuration successful. Configuration file used: 
+27   INFO  [main] Log5J : ***  34.3505  ***  C:\Infineon\AURIX-Studio-1.10.28\configuration\org.eclipse.osgi\398\0\.cp\lib\log4j.properties
+27   INFO  [main] Log5J : ***  34.3786  ***  **********************************************************
